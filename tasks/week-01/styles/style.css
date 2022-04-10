@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+}
+html,
+body,
+.page {
+    margin: 0;
+    height: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji,
+    Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji ;
+}
+.page {
+    display: flex;
+    flex-direction: column;
+    background-color: #eee;
+    max-width: 1024px;
+    margin: auto;
+}
+.top {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    background-color: #d23e34;
+    padding-top: 15px;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
+}
+.top-title {
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+}
+.tabs {
+    padding: 15px;
+}
+.tabs > ul {
+    margin: 0;
+    display:  flex;
+    border-radius: 10px;
+    background-color: #cd2523;
+    overflow: hidden;
+    padding: 0;
+}
+.tabs-img {
+    position: relative;
+    top: 2px;
+    left: -10px;
+    height: 15px;
+}
+.tab-item {
+    flex: 1;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    font-size: 12px;
+    cursor: pointer;
+    list-style: none;
+  }
+  .tab-active {
+    background-color: #b9211f;
+  }
+  .cats {
+    padding: 15px;
+    border-radius: 10px 10px 0 0;
+    background-color: #fff;
+  }
+  .cat-list {
+    display: flex;
+    overflow-x: auto;
+    padding: 0;
+    margin: 0;
+  }
+  .cat-list::-webkit-scrollbar {
+    display: none;
+  }
+  .cat-item {
+    line-height: 25px;
+    background-color: #f7f7f7;
+    font-size: 12px;
+    color: #333;
+    padding: 0 12px;
+    border-radius: 5px;
+    margin-right: 10px;
+    white-space: nowrap;
+    list-style: none;
+  }
+  .cat-active {
+    background-color: #d23e34;
+    color: #fff;
+  }
+  .list {
+    position: relative;
+    width: 100%;
+    flex: 1;
+    overflow: auto;
+    padding: 15px;
+  }
+  .sku {
+    display: block;
+    text-decoration: none;
+    padding: 15px;
+    padding-bottom: 35px;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-bottom: 15px;
+  }
+  .sku:last-child {
+    margin-bottom: 0;
+  }
+  .cover {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    border-width: 5px;
+    overflow: hidden;
+  }
+  .cover-img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  .cover-rank {
+    position: absolute;
+    width: 36px;
+    left: 0;
+    top: 0;
+  }
+  .info {
+    position: relative;
+    flex: 1;
+    color: #333;
+    font-size: 15px;
+    
+  }
+  .desc {
+    float: right;
+    font-size: 10px;
+    color: #999;
+  }
+  .desc-number {
+    margin-left: 5px;
+  }
+  .desc .iconfont {
+    margin-left: 20px;
+  }
+  .bottom {
+    display: inline-flex;
+  }
+  .type{
+    display: flex;
+    background-color: #f7f7f7;
+    border-radius: 20px;
+    padding: 10px;
+    color: #666;
+    margin-top: 15px;
+    font-size: 10px;
+    width: 60px;
+  }
+  .type-img {
+    height: 15px;
+  }
+  .desc-special {
+    position: relative;
+    left: 150px;
+    padding: 10px;
+    margin-top: 15px;
+    font-size: 10px;
+    color: #999;
+  }
+  
